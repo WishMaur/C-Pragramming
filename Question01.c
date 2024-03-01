@@ -1,23 +1,26 @@
-/*
-What will be output of this program.?
-
-int a=10;
-if(a=11){
-    printf("I am 11");
-}
-else{
-    printf("I am not 11");
-}
-*/
+// Write a function that prints Namaste if user is Indian & Bonjour if the user is french..
 
 #include<stdio.h>
+void Namaste();
+void Bonjour();
+
 int main(){
-    int a=10;
-if(a=11){
-    printf("I am 11");
-}
-else{
-    printf("I am not 11");
-}
+    char ch;
+    printf("Enter i for Indian and f for French: ");
+    scanf("%c",&ch);
+    if(ch=='i'){
+        Namaste();
+    }
+    else{
+        Bonjour();
+    }
+    
 return 0;
+}
+
+void Namaste(){
+    printf("Namaste\n");
+}
+void Bonjour(){
+    printf("Bonjour\n");
 }
