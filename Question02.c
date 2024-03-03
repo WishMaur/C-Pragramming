@@ -1,10 +1,20 @@
-//WHAT DATA TYPE WILL 3.0/8-2 RETURN ?
-// Answer= double, float;
+// Write a function to convert celcsius temperature into fahreheit;
 
 #include<stdio.h>
-int main(){
-    float a=3.0/8-2;
-    printf("%f",a);
+float celtofah(cel);
 
-    return 0;
+int main(){
+    int n;
+    printf("Enter the celcsius temperature: ");
+    scanf("%d",&n);
+
+    printf("Fahreheit Temp. is %f",celtofah(n));
+
+return 0;
+}
+
+float celtofah(cel){
+    float fah;
+    fah=(cel*1.8)+32;
+    return fah;
 }
