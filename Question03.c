@@ -1,15 +1,23 @@
-// WRITE A PROGRAM TO CHECK WHETHER A NUMBER IS DIVISIBLE BY 7 OR NOT ?
-// (if return 1 then its divisible else return 0 then not divisible)
-
-// WRITE A PROGRAM TO CHECK IF A NUMBER IS ODD OR EVEN ?
-// (if return 1 then its even else return 0 then odd)
+// Write a function to calculate Percentage of a student from marks in science , math , hindi.
 
 #include<stdio.h>
+void percentage(int sci, int math, int hindi);
 int main(){
-    int a;
-    printf("Enter a number\n");
+    int a,b,c;
+    printf("Enter the science number: ");
     scanf("%d",&a);
-    printf("Divisible test return:  %d",a % 7 == 0);
+     printf("Enter the math number: ");
+    scanf("%d",&b);
+     printf("Enter the hindi number: ");
+    scanf("%d",&c);
 
-    return 0;
+    percentage(a,b,c);
+
+
+return 0;
+}
+void percentage(int sci, int math, int hindi){
+    float perc=(sci+math+hindi)/3;
+    printf("Percentage is: %f", perc);
+
 }
